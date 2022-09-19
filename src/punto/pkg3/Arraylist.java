@@ -40,7 +40,7 @@ public class Arraylist {
         int p2 = 0;
         int p3 = 0;
         
-        for(Nodo x: Lista){
+        for(Nodo x: Lista){     /*Foreach para recorrer la cantidad de docentes de cada tipo*/
             
             if(x.getTipo().split("(?=\\s)").equalsIgnoreCase(" catedra")){
                 c++;
