@@ -42,13 +42,11 @@ public class Arraylist {
         
         for(Nodo x: Lista){
             
-            String Y[] = x.getTipo().split("(?=\\s)");
-            
-            if(Y[1].equalsIgnoreCase(" catedra")){
+            if(x.getTipo().split("(?=\\s)").equalsIgnoreCase(" catedra")){
                 c++;
-            }else if(Y[1].equalsIgnoreCase(" planta")){
+            }else if(x.getTipo().split("(?=\\s)").equalsIgnoreCase(" planta")){
                 p++;
-            }else if(Y[1].equalsIgnoreCase(" ocacional")){
+            }else if((x.getTipo().split("(?=\\s)").equalsIgnoreCase(" ocacional")){
                 o++;
             }
  
